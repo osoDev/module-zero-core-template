@@ -66,6 +66,17 @@
             {{ "LogIn" | localize }}
           </button>
         </div>
+        <div class="col-xs-4">
+          <button
+            mat-flat-button
+            type="button"
+            flex="15"
+            color="accent"
+            (click)="reloadLocalization()"
+          >
+            {{ "Reload Localization" | localize }}
+          </button>
+        </div>
       </div>
       <div class="row m-t-15 m-b--20" *ngIf="isSelfRegistrationAllowed">
         <div class="col-xs-12">

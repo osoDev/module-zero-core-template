@@ -17,6 +17,11 @@ namespace AbpCompanyName.AbpProjectName.Localization
                     )
                 )
             );
+            var customProvider = new CustomLocalizationProvider();
+
+
+            var localizationSource = new DictionaryBasedLocalizationSource("CustomSourceName", customProvider);
+            localizationConfiguration.Sources.Add(localizationSource);
         }
     }
 }
